@@ -10,8 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "lucide-react": "^0.453.0",
+    "postcss": "^8.4.47",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^3.4.14"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
@@ -23,6 +28,9 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.13",
     "globals": "^15.11.0",
-    "vite": "^5.4.9"
+    "vite": "^5.4.9",
+    "autoprefixer": "^10.x",
+    "postcss": "^8.x",
+    "tailwindcss": "^3.x"
   }
 }

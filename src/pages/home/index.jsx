@@ -1,6 +1,10 @@
 import React from 'react';
 import * as Icons from 'lucide-react';
-import './index.css'
+import './index.css';
+import pizza_img from '../../assets/pizza.jpg';
+import greencurry_img from '../../assets/greencurry.jpg';
+import tiramisu_img from '../../assets/pizza.jpg';
+
 const Home = () => {
   const { Search, ChefHat, Clock, Users, ArrowRight, Heart } = Icons;
   //Dummy Data for now has to be updated later
@@ -10,21 +14,24 @@ const Home = () => {
       chef: "Maria Garcia",
       time: "45 mins",
       likes: 1240,
-      difficulty: "Medium"
+      difficulty: "Medium",
+      img: pizza_img
     },
     {
       title: "Thai Green Curry",
       chef: "Alex Chen",
       time: "30 mins",
       likes: 892,
-      difficulty: "Easy"
+      difficulty: "Easy",
+      img: greencurry_img
     },
     {
       title: "Classic Tiramisu",
       chef: "Sophie Martin",
       time: "1 hour",
       likes: 1567,
-      difficulty: "Hard"
+      difficulty: "Hard",
+      img: tiramisu_img
     }
   ];
 
@@ -98,7 +105,7 @@ const Home = () => {
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="h-48 bg-gray-200">
                   <img
-                    src="/api/placeholder/400/300"
+                    src={recipe.img}
                     alt={recipe.title}
                     className="w-full h-full object-cover"
                   />

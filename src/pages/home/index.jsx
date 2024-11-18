@@ -1,13 +1,13 @@
 import React from 'react';
 import * as Icons from 'lucide-react';
-import './index.css';
-import pizza_img from '../../assets/pizza.jpg';
-import greencurry_img from '../../assets/greencurry.jpg';
-import tiramisu_img from '../../assets/pizza.jpg';
+import Pizza from '../../assets/pizza.jpg';
+import Tiramisu from '../../assets/tiramisu.jpg';
+import Curry from '../../assets/greencurry.jpg';
+import logo from '../../assets/logo.png';
 
-const Home = () => {
+const LandingPage = () => {
   const { Search, ChefHat, Clock, Users, ArrowRight, Heart } = Icons;
-  //Dummy Data for now has to be updated later
+  
   const featuredRecipes = [
     {
       title: "Homemade Pizza Margherita",
@@ -15,7 +15,7 @@ const Home = () => {
       time: "45 mins",
       likes: 1240,
       difficulty: "Medium",
-      img: pizza_img
+      img: Pizza
     },
     {
       title: "Thai Green Curry",
@@ -23,7 +23,7 @@ const Home = () => {
       time: "30 mins",
       likes: 892,
       difficulty: "Easy",
-      img: greencurry_img
+      img: Curry
     },
     {
       title: "Classic Tiramisu",
@@ -31,14 +31,14 @@ const Home = () => {
       time: "1 hour",
       likes: 1567,
       difficulty: "Hard",
-      img: tiramisu_img
+      img: Tiramisu
+
     }
   ];
 
   return (
     <div className="min-h-screen bg-white">
-      {/* NavBar */}
-      <nav className="bg-white shadow-md py-4">
+         <nav className="bg-white shadow-md py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-2">
@@ -181,4 +181,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default LandingPage;
